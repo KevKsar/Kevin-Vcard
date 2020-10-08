@@ -68,8 +68,7 @@ h2{
    30%{ color: #438dce; background-color: whitesmoke;}
    40%{ color: whitesmoke;background-color: #438dce}
    50%{ color: #438dce; background-color: whitesmoke;}
-   60%{ color: whitesmoke;background-color: #438dce}
-   
+   60%{ color: whitesmoke;background-color: #438dce;}   
  }
 
  #link-cv:visited{
@@ -94,7 +93,7 @@ h2{
 }
 
 #datas{
-  width: 440px;
+  width: 460px;
   height: 650px;
   overflow-y: scroll;
 }
@@ -138,6 +137,7 @@ h2{
 }
 
 #infos li{
+  display: inline-block;
   list-style-type: none;
   line-height: 35px;
   color: rgb(80, 78, 78);
@@ -259,14 +259,43 @@ h2{
   color: #438dce;
 }
 
-#html::before{
+#html:before{
   content: url(images/html.png);
   position: relative;
   top: 9px;
 }
 
-#css::before{
+#css:before{
   content: url(images/css.png); 
   position: relative;
   top: 9px;
+}
+
+.menu a{
+  background-color:  #438dce;
+  font-size: small;
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  line-height: 9px;
+  border-radius: 5px;
+  
+}
+.menu a:visited{
+  color: whitesmoke;
+  
+}
+
+.menu li{
+  display: inline-block;
+  border: solid black;
+  
+}
+
+.menu{
+  position: relative;
+  border: solid black;
 }
